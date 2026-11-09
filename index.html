@@ -2,33 +2,92 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salón Bella Estilo: cortes, color, manicure, pedicure y maquillaje profesional. Agenda tu cita por WhatsApp.">
     <title>Salón Bella Estilo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Salón Bella Estilo</h1>
-    <p>Resalta tu belleza natural</p>
+<header class="navbar">
+    <a href="#inicio" class="logo">Bella Estilo</a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="menu">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#horario">Horario</a>
+        <a href="#contacto" class="menu-cta">Agendar cita</a>
+    </nav>
 </header>
 
-<section class="servicios">
-    <h2>Nuestros Servicios</h2>
-    <ul>
-        <li>Corte de cabello</li>
-        <li>Manicure y pedicure</li>
-        <li>Maquillaje profesional</li>
+<main>
+
+<section id="inicio" class="hero">
+    <h1>Salón Bella Estilo</h1>
+    <p>Resalta tu belleza natural con atención personalizada.</p>
+    <a href="#contacto" class="boton">Agenda tu cita</a>
+</section>
+
+<section id="servicios" class="servicios">
+    <h2>Nuestros servicios</h2>
+    <div class="tarjetas">
+        <article class="tarjeta">
+            <span class="icono" aria-hidden="true">✂️</span>
+            <h3>Corte y peinado</h3>
+            <p>Cortes para dama y caballero, cepillado y peinados para eventos.</p>
+        </article>
+        <article class="tarjeta">
+            <span class="icono" aria-hidden="true">🎨</span>
+            <h3>Color</h3>
+            <p>Tintes, mechas y retoques con productos de calidad.</p>
+        </article>
+        <article class="tarjeta">
+            <span class="icono" aria-hidden="true">💅</span>
+            <h3>Manicure y pedicure</h3>
+            <p>Uñas tradicionales y semipermanentes con todas las medidas de higiene.</p>
+        </article>
+        <article class="tarjeta">
+            <span class="icono" aria-hidden="true">💄</span>
+            <h3>Maquillaje profesional</h3>
+            <p>Maquillaje social y para ocasiones especiales.</p>
+        </article>
+    </div>
+</section>
+
+<section id="nosotros" class="nosotros">
+    <h2>¿Por qué elegirnos?</h2>
+    <ul class="beneficios">
+        <li><strong>Atención personalizada:</strong> escuchamos lo que quieres antes de empezar.</li>
+        <li><strong>Higiene:</strong> herramientas desinfectadas en cada servicio.</li>
+        <li><strong>Puntualidad:</strong> respetamos la hora de tu cita.</li>
     </ul>
 </section>
 
-<section class="contacto">
+<section id="horario" class="horario">
+    <h2>Horario de atención</h2>
+    <table>
+        <tr><th scope="row">Lunes a viernes</th><td>9:00 a. m. – 7:00 p. m.</td></tr>
+        <tr><th scope="row">Sábados</th><td>8:00 a. m. – 6:00 p. m.</td></tr>
+        <tr><th scope="row">Domingos y festivos</th><td>Con cita previa</td></tr>
+    </table>
+    <p class="estado-horario" id="estado-horario"></p>
+</section>
+
+<section id="contacto" class="contacto">
     <h2>Contáctanos</h2>
-    <p>Agenda tu cita ahora mismo</p>
-    <a href="https://wa.me/573000000000" target="_blank" class="boton">
+    <p>Agenda tu cita ahora mismo por WhatsApp.</p>
+    <a href="https://wa.me/573000000000?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="boton">
         Escríbenos por WhatsApp
     </a>
 </section>
 
+</main>
+
+<footer class="footer">
+    <p>© <span id="anio"></span> Salón Bella Estilo · Desarrollado por Evelyn Escobar</p>
+</footer>
+
+<a href="https://wa.me/573000000000?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="whatsapp-flotante" aria-label="Escríbenos por WhatsApp">💬</a>
 
 <script src="script.js"></script>
 </body>
