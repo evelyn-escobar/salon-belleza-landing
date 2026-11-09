@@ -4,6 +4,8 @@ Landing page responsive para un salón de belleza, desarrollada con HTML, CSS y 
 
 **Ver en vivo:** https://evelyn-escobar.github.io/salon-belleza-landing/
 
+<img src="docs/escritorio.png" alt="Vista en computador" width="640"> <img src="docs/celular.png" alt="Vista en celular, con el menú abierto" width="300">
+
 ## Funcionalidades
 
 - Diseño responsive: se adapta a celular, tablet y computador.
